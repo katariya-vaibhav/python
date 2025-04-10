@@ -1,0 +1,83 @@
+
+
+
+# ------------------- ---- complex numbers ----------------- # 
+# >>> (2 + 3j) * 5
+# (10+15j)
+# >>>
+
+## ----------------------------------- random methods --------------------------------------- #
+
+# >>> import random 
+# >>> items = ['one ']
+# >>> items = ['one' , 'two' , 'three']
+# >>> items 
+# ['one', 'two', 'three']
+# >>> random.choice(items)
+# 'two'
+# >>> random.choice(items)
+# 'one'
+# >>> random.choice(items)
+# 'one'
+# >>> random.choice(items)
+# 'two'
+# >>> random.shuffle(items) 
+# >>> random.shuffle(items)
+# >>> items
+# ['three', 'two', 'one']
+# >>> random.shuffle(items)
+# >>> items                
+# ['three', 'one', 'two']
+# >>> random.randint(1,10)
+# 9
+# >>> random.randint(1,10)
+# 8
+# >>> random.randint(1,10)
+# 7
+# >>>  
+
+
+# ---------------- Decimal equation ------------------ # 
+
+# problem
+# >>> 0.1 + 0.1 + 0.1 - 0.3
+# 5.551115123125783e-17
+# >>> (0.1 + 0.1 + 0.1) - 0.3
+# 5.551115123125783e-17
+
+# solution 
+# >>> from decimal import Decimal
+# >>> Decimal('0.1') + Decimal('0.1') + Decimal('0.1') - Decimal('0.3')
+# Decimal('0.0')
+# >>>    
+
+# --------------- set -------------------- #
+# >>> setone = {1 , 2 , 3, 4}
+# >>> setone
+# {1, 2, 3, 4}
+
+# intersection
+# >>> setone & {1 , 2 }  
+# {1, 2}
+
+# union
+# >>> setone | {1 , 2 , 3, 8 , 9}
+# {1, 2, 3, 4, 8, 9}
+
+# subtraction
+# >>> setone - {1 , 2 , 3 , 4}
+# set()
+
+# types 
+# >>> type({})
+# <class 'dict'>
+# >>> type(())
+# <class 'tuple'>
+# >>> type(set())
+# <class 'set'>
+# >>> 
+
+
+
+
+

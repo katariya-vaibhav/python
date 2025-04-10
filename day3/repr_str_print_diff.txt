@@ -1,0 +1,26 @@
+Difference Between repr(), str(), and print() in Python
+--------------------------------------------------------
+
+1. repr()
+   - Purpose: Official string representation of an object.
+   - Goal: Unambiguous and ideally can recreate the object.
+   - Used by: Developers (e.g., debugging, logging).
+   - Uses the __repr__() method.
+
+2. str()
+   - Purpose: Informal or nicely printable string representation.
+   - Goal: Readable and user-friendly.
+   - Used by: End users (e.g., in UIs, output).
+   - Uses the __str__() method.
+
+3. print()
+   - Purpose: Displays output to the console.
+   - Internally calls str() on the object.
+
+Example :
+---------------
+x = 'hello'
+repr(x) -> 'hello'
+str(x)  -> hello
+print(x)-> hello
+
