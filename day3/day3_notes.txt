@@ -77,6 +77,56 @@
 # <class 'set'>
 # >>> 
 
+# -------------------------- string ------------------------ # 
+
+>>> str = "vaibhav"
+>>> print(str[0])
+v
+>>>  
+
+# slice 
+
+>>> str = "vaibhav katariya"
+>>> print(str[0:7])
+vaibhav
+>>>
+
+
+>>> num_list = "0123456789"
+>>> num_list[:]
+'0123456789'
+>>> num_list[:5]
+'01234'
+>>> num_list[5:] 
+'56789'
+>>> num_list[-5:]
+'56789'
+>>> num_list[-1:]
+'9'
+>>> num_list[:-1]
+'012345678'
+>>> num_list[-2:]
+'89'
+>>> num_list[5:9]
+'5678'
+>>> num_list[1:8:2]
+'1357'
+
+>>> str = "    vaibhav codeeeeee      "
+>>> str.strip()
+'vaibhav codeeeeee'
+>>>
+
+>>> print(str.replace("vaibhav" , "lets"))
+    lets codeeeeee      
+>>>
+
+
+
+
+
+
+
 
 
 
