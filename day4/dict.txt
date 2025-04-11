@@ -1,0 +1,66 @@
+>>> my_dict = {"one":"1" , "two":"2" , "three":"3"}
+>>> print(my_dict)                                 
+{'one': '1', 'two': '2', 'three': '3'}
+>>> my_dict["two"]
+'2'
+>>> my_dict.get("two")
+'2'
+>>> my_dict["three"] = "third"
+>>> print(my_dict)            
+{'one': '1', 'two': '2', 'three': 'third'}
+>>> for key in my_dict:
+...     print(key)
+... 
+one
+two
+three
+>>> for key in my_dict:
+...     print(key , my_dict[key])
+... 
+one 1
+two 2
+three third
+>>> for key,value in my_dict.items():
+...     print(key , value) 
+... 
+one 1
+two 2
+three third
+>>>
+
+>>> my_dict["four"]='4'              
+>>> print(my_dict)                   
+{'one': '1', 'two': '2', 'three': 'third', 'four': '4'}
+>>>
+
+
+>>> my_dict.pop("three")
+'third'
+>>> print(my_dict)      
+{'one': '1', 'two': '2', 'four': '4'}
+>>>
+
+
+>>> my_dict.popitem()  
+('four', '4')
+>>> print(my_dict)   
+{'one': '1', 'two': '2'}
+>>>
+
+
+
+>>> del my_dict["two"]
+>>> print(my_dict)    
+{'one': '1'}
+>>>
+
+
+
+>>> squared_num = {x:x**2 for x in range(11)}
+>>> squared_num
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+>>>
+
+
+
+
