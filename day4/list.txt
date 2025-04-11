@@ -1,0 +1,90 @@
+>>> my_list = ["one" , "two" ,"three" , "four" ]
+>>> print(my_list)
+['one', 'two', 'three', 'four']
+>>> print(my_list[1:3])
+['two', 'three']
+>>> print(my_list[1:2])
+['two']
+>>> my_list[1:2] = ["five"]
+>>> print(my_list[1:2])    
+['five']
+>>> print(my_list)     
+['one', 'five', 'three', 'four']
+>>> 
+
+
+>>> print(my_list[1:1])                    
+[]
+>>> my_list[1:1] = ["test" , "test"] 
+['one', 'test', 'test', 'five', 'three', 'four']
+>>> my_list[1:1] = []               
+>>> print(my_list)   
+['one', 'test', 'test', 'five', 'three', 'four']
+>>> my_list[1:3] = []               
+>>> print(my_list)   
+['one', 'five', 'three', 'four']
+>>>
+
+
+
+>>> print(my_list)   
+['one', 'five', 'three', 'four']
+>>> for num in my_list:
+...     print(num)
+... 
+one
+five
+three
+four
+>>> for num in my_list:
+...     print(num , end = "-")
+... 
+one-five-three-four->>> 
+>>> if "six" in my_list:
+...     print("i have six ")
+... 
+>>> my_list.append("six")   
+>>> if "six" in my_list:    
+...     print("i have six")
+... 
+i have six
+>>>
+
+
+
+>>> my_list
+['one', 'five', 'three', 'four', 'six']
+>>> my_list.pop("six")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object cannot be interpreted as an integer
+>>> my_list.pop(2)    
+'three'
+>>> my_list
+['one', 'five', 'four', 'six']
+>>> my_list.remove(2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: list.remove(x): x not in list
+>>> my_list.remove("six")
+>>> my_list              
+['one', 'five', 'four']
+>>> my_list.insert(1 , 'testnum') 
+>>> my_list
+['one', 'testnum', 'five', 'four']
+>>>
+
+
+
+>>> my_list_copy = my_list.copy()
+>>> my_list_copy 
+['one', 'testnum', 'five', 'four']
+>>>
+
+
+
+
+>>> squared_num = [x**2 for x in range(11)]
+>>> squared_num                            
+[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>>>
