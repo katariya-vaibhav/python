@@ -1,0 +1,61 @@
+>>> f = open("01_loop.py")
+>>> f.readline()
+'numbers = [1, -2, 3, -11, 18, 4, 23, 45, -9]\n'
+>>> f.readline()
+'\n'
+>>> f.readline()
+'count = 0\n'
+>>> f.readline()
+'\n'
+>>> f.readline()
+'for num in numbers:\n'
+>>> f.readline()
+'    if num > 0:\n'
+>>> f.readline()
+'        count = count + 1\n'
+>>> 
+
+
+>>> f = open("01_loop.py")
+>>> f.__next__()
+'numbers = [1, -2, 3, -11, 18, 4, 23, 45, -9]\n'
+>>> f.__next__()
+'\n'
+>>> f.__next__()
+'count = 0\n'
+>>> f.__next__()
+'\n'
+>>> f.__next__()
+'for num in numbers:\n'
+>>> f.__next__()
+'    if num > 0:\n'
+>>> f.__next__()
+'        count = count + 1\n'
+>>> f.__next__()
+'else:\n'
+>>> f.__next__()
+'    print("No negative numbers found in the list.")\n'
+>>> f.__next__()
+'\n'
+>>> f.__next__()
+'print(f"positive number count is {count}")'
+>>> f.__next__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> f.__next__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>>
+
+same working with list dict and range 
+
+
+
+
+
+# in file its true but in range , list , dict its false 
+>>> iter(f) is f
+True
+>>>
