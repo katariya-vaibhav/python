@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "name": "demo",
+        "time": "45 mins",
+        "description": "this description for testing/demo",
+        "thumbnail": "\"C:\\Users\\HP\\OneDrive\\Pictures\\Screenshots\\Screenshot 2025-04-15 164551.png\""
+    }
+]
