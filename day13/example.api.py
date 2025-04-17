@@ -32,10 +32,16 @@ def update_post(post_id):
     response = requests.put(f"{BASE_URL}/{post_id}", json=data)
     print("Post updated:", response.json())
 
-
+def delete_post(post_id):
+    response = requests.delete(f"{BASE_URL}/{post_id}")
+    if response.status_code == 200:
+        print(f"Post {post_id} deleted successfully.")
+    else:
+        print("Failed to delete post.")
 
 if __name__ == "__main__":
     get_posts()
     create_post()
     update_post(1)
+    delete_post(1)
 
