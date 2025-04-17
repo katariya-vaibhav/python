@@ -23,9 +23,19 @@ def create_post():
     print("Post created:", response.json())
 
 # 🔹 PUT - Update a post
+def update_post(post_id):
+    data = {
+        "title": "Updated Title",
+        "body": "Updated content.",
+        "userId": 1
+    }
+    response = requests.put(f"{BASE_URL}/{post_id}", json=data)
+    print("Post updated:", response.json())
+
 
 
 if __name__ == "__main__":
     get_posts()
     create_post()
+    update_post(1)
 
