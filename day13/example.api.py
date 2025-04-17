@@ -12,8 +12,20 @@ def get_posts():
         print("Failed to fetch posts")
 
 
+# 🔹 POST - Create a new post
+def create_post():
+    data = {
+        "title": "Learning Python APIs",
+        "body": "Using the requests module is simple!",
+        "userId": 1
+    }
+    response = requests.post(BASE_URL, json=data)
+    print("Post created:", response.json())
+
+# 🔹 PUT - Update a post
 
 
 if __name__ == "__main__":
     get_posts()
+    create_post()
 
